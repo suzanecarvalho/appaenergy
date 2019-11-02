@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    
+  <title>Appa Energy</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+	
+<body>
+    <div class="container">
+
+		<div class="jumbotron">
+		  <h1 class="display-4 text-center">Appa Energy</h1>
+		  <p class="lead text-center">Leilão de energia</p>
+		  <div class="" style="text-align: right;">
+		  	<strong class="disponivel" title="Leilão disponível de 07:00h às 20:00h"s>Leilão Disponível</strong> - Hoje, <span class="dia"></span>
+		  </div>
+		  <hr class="my-4">
+		  <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+		  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+
+		  <div class="row main">
+		  	<div class="col-4">
+		  		<div class="card" style="width: 18rem;">
+				  <img src="img/casa1.jpg" class="card-img-top" alt="...">
+				  <div class="card-body c1">
+				  	<h5 class="text-center">Casa 01</h5>
+		  			<hr class="my-1">
+		  			<h4 class="text-center"> <span class="badge badge-secondary">Produção Acumulada</span></h4>
+				    <button type="button" class="btn btn-primary btn-block prod_acum">
+					  50kW
+					</button>
+					<br>
+					<h4 class="text-center"> <span class="badge badge-secondary">Previsão de Estoque no<br> fim do dia</span></h4>
+				    <button type="button" class="btn btn-primary btn-block">
+					  1300kW
+					</button>
+
+					<br>
+					<h4 class="text-center"> <span class="badge badge-secondary">Preço Mínimo por kW</span></h4>
+				    <button type="button" class="btn btn-primary btn-block">
+					  R$ 0,20
+					</button>
+					
+					<br>
+					<button type="button" class="btn btn-success btn-block btn-valor">
+					  Ofertar
+					</button>
+					<br>
+					<div class="wrap-form" style="display: none;">
+						<form method="post" class="casa-1">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Valor por kW</label>
+						    <input type="text" class="money form-control valor_kw" aria-describedby="emailHelp" placeholder="Digite um valor em Ether">
+						  </div>
+
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Quantidade de kW</label>
+						    <input type="text" class="form-control qtd_kw" aria-describedby="emailHelp" placeholder="Digite um valor em kW">
+						  </div>
+						  <p>
+						  	<!-- R$ <span class="show_valor_kw">1,20</span>*<span class="show_qtd_kw">1000</span>kW =  -->
+						  	R$ <span class="valor_total">0,00</span>
+						  </p>
+							<button type="button" class="btn btn-danger btn-block btn-submit">
+							  Submeter
+							</button>
+						</form>
+
+					</div>
+				    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+				  </div>
+				</div>
+		  	</div>
+		  	<div class="col-4">
+		  		<div class="card" style="width: 18rem;">
+				  <img src="img/casa2.jpg" style="height: 190.06px" class="card-img-top" alt="...">
+				  <div class="card-body c2">
+				  	<h5 class="text-center">Casa 02</h5>
+		  			<hr class="my-1">
+		  			<h4 class="text-center"> <span class="badge badge-secondary">Produção Acumulada</span></h4>
+				    <button type="button" class="btn btn-primary btn-block prod_acum">
+					  50kW
+					</button>
+					<br>
+					<h4 class="text-center"> <span class="badge badge-secondary">Previsão de Estoque no<br> fim do dia</span></h4>
+				    <button type="button" class="btn btn-primary btn-block">
+					  1300kW
+					</button>
+
+					<br>
+					<h4 class="text-center"> <span class="badge badge-secondary">Preço Mínimo por kW</span></h4>
+				    <button type="button" class="btn btn-primary btn-block">
+					  R$ 0,20
+					</button>
+					
+					<br>
+					<button type="button" class="btn btn-success btn-block btn-valor">
+					  Ofertar
+					</button>
+					<br>
+					<div class="wrap-form" style="display: none;">
+						<form method="post" class="casa-2">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Valor por kW</label>
+						    <input type="text" class="money form-control valor_kw" aria-describedby="emailHelp" placeholder="Digite um valor em Ether">
+						  </div>
+
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Quantidade de kW</label>
+						    <input type="text" class="form-control qtd_kw" aria-describedby="emailHelp" placeholder="Digite um valor em kW">
+						  </div>
+						  <p>
+						  	<!-- R$ <span class="show_valor_kw">1,20</span>*<span class="show_qtd_kw">1000</span>kW =  -->
+						  	R$ <span class="valor_total">0,00</span>
+						  </p>
+							<button type="button" class="btn btn-danger btn-block btn-submit">
+							  Submeter
+							</button>
+						</form>
+
+					</div>
+				    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+				  </div>
+				</div>
+		  	</div>
+		  	<div class="col-4">
+		  		<div class="card" style="width: 18rem;">
+				  <img src="img/casa3.jpg" class="card-img-top" alt="...">
+				  <div class="card-body c3">
+				  	<h5 class="text-center">Casa 03</h5>
+		  			<hr class="my-1">
+		  			<h4 class="text-center"> <span class="badge badge-secondary">Produção Acumulada</span></h4>
+				    <button type="button" class="btn btn-primary btn-block prod_acum">
+					  50kW
+					</button>
+					<br>
+					<h4 class="text-center"> <span class="badge badge-secondary">Previsão de Estoque no<br> fim do dia</span></h4>
+				    <button type="button" class="btn btn-primary btn-block">
+					  1300kW
+					</button>
+
+					<br>
+					<h4 class="text-center"> <span class="badge badge-secondary">Preço Mínimo por kW</span></h4>
+				    <button type="button" class="btn btn-primary btn-block">
+					  R$ 0,20
+					</button>
+					
+					<br>
+					<button type="button" class="btn btn-success btn-block btn-valor">
+					  Ofertar
+					</button>
+					<br>
+					<div class="wrap-form" style="display: none;">
+						<form method="post" class="casa-3">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Valor por kW</label>
+						    <input type="text" class="money form-control valor_kw" aria-describedby="emailHelp" placeholder="Digite um valor em Ether">
+						  </div>
+
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Quantidade de kW</label>
+						    <input type="text" class="form-control qtd_kw" aria-describedby="emailHelp" placeholder="Digite um valor em kW">
+						  </div>
+						  <p>
+						  	<!-- R$ <span class="show_valor_kw">1,20</span>*<span class="show_qtd_kw">1000</span>kW =  -->
+						  	R$ <span class="valor_total">0,00</span>
+						  </p>
+							<button type="button" class="btn btn-danger btn-block btn-submit">
+							  Submeter
+							</button>
+						</form>
+
+					</div>
+				    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+				  </div>
+				</div>
+		  	</div>
+		  </div>
+		</div>
+	</div>
+    <!-- <div class="container">
+
+        <h1>Deposite um valor ou retire fundos previamente depositados.</h1>
+  
+        <label for="deposito" class="col-lg-2 control-label">Valor:</label>
+        <input id="valor" type="number" min="0" step="0.1">
+        <button id="button1">Depositar investimento</button>
+
+        <label for="saque" class="col-lg-2 control-label">Senha:</label>
+        <input id="senha" type="text">
+        <button id="button2">Retirar fundos</button>
+
+
+    </div> -->
+
+<script src="js/jquery.js" ></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="http://rawgit.com/ethereum/web3.js/0.16.0/dist/web3.min.js"></script>
+<script src="js/jquery.mask.min.js" ></script>
+
+	<script type="text/javascript">
+		$(function(){
+			var time = new Date();
+				time = ("0" + time.getHours()).slice(-2)   + ":" + ("0" + time.getMinutes()).slice(-2) + ":" + ("0" + time.getSeconds()).slice(-2) 
+		
+			$.post('http://appaenergy.epizy.com/api.php', {q:'producao_acumulada', casa:1, hora:time}, function(data, textStatus, xhr) {
+				/*optional stuff to do after success */
+				$('.c1 .prod_acum').text(data.prod.replace('.', ',')+'kw');
+				console.log(data);
+			});
+
+			$.post('http://appaenergy.epizy.com/api.php', {q:'producao_acumulada', casa:2, hora:time}, function(data, textStatus, xhr) {
+				/*optional stuff to do after success */
+				$('.c2 .prod_acum').text(data.prod.replace('.', ',')+'kw');
+				console.log(data);
+			});
+
+			$.post('http://appaenergy.epizy.com/api.php', {q:'producao_acumulada', casa:3, hora:time}, function(data, textStatus, xhr) {
+				/*optional stuff to do after success */
+				$('.c3 .prod_acum').text(data.prod.replace('.', ',')+'kw');
+				console.log(data);
+			});
+
+			$(".btn-valor").click(function(event) {
+				/* Act on the event */
+				var form = $(this).siblings('.wrap-form');
+				$(form).css('display', 'block');
+				console.log(form);
+			});
+
+			$('.money').mask('#.##0,00', {reverse: true});
+
+			//Submit
+			$(".casa-1, .casa-2, .casa-3").submit(function(e) {
+				e.preventDefault()
+			});
+
+			$('.valor_kw').keyup(function(e) {
+				var show_valor_kw= $(this).val();
+				var valor_kw	= $(this).val();
+					valor_kw 	= valor_kw == '' ? '0' : valor_kw;
+					valor_kw	= valor_kw.replace('.','');
+					valor_kw	= valor_kw.replace(',','.');
+				var valorkw_ft	= parseFloat(valor_kw);
+				console.log(valorkw_ft);
+
+				var qtd_kw = $($(this).parents()[2]).find('.qtd_kw');
+				var show_total = $($(this).parents()[2]).find('.valor_total');
+					qtd_kw = $(qtd_kw).val();
+					qtd_kw = qtd_kw == '' ? 0 : parseInt(qtd_kw);
+				var total  = qtd_kw*valorkw_ft;
+				$(show_total).text(total);
+				console.log(show_total);
+
+			});
+
+			$('.qtd_kw').keyup(function(e) {
+				var show_valor_kw= $(this).val();
+				var valor_kw	= $(this).val();
+					valor_kw 	= valor_kw == '' ? '0' : valor_kw;
+					valor_kw	= valor_kw.replace('.','');
+					valor_kw	= valor_kw.replace(',','.');
+				var valorkw_ft	= parseFloat(valor_kw);
+				console.log(valorkw_ft);
+
+				var qtd_kw = $($(this).parents()[2]).find('.valor_kw');
+				var show_total = $($(this).parents()[2]).find('.valor_total');
+					qtd_kw = $(qtd_kw).val();
+					qtd_kw = qtd_kw == '' ? 0 : parseInt(qtd_kw);
+				var total  = qtd_kw*valorkw_ft;
+				$(show_total).text(total);
+				console.log(show_total);
+
+			});
+
+			$(".btn-submit").click(function(e) {
+				e.preventDefault()
+				
+				//Verificação
+				var form 		= $(this).parents()[0];
+				var valor_kw 	= $(form).find('.valor_kw')[0];
+					valor_kw	= $(valor_kw).val();
+					valor_kw	= valor_kw.replace('.','');
+					valor_kw	= valor_kw.replace(',','.');
+				var valorkw_ft	= parseFloat(valor_kw);
+
+				var qtd_kw 		= $(form).find('.qtd_kw')[0];
+					qtd_kw		= $(qtd_kw).val();
+
+				console.log(form, $(valor_kw).val(), $(qtd_kw).val());
+				console.log(parseFloat(valor_kw))
+				//check
+				//Valores minimo - verificar depois ==============================================================
+				if (valorkw_ft < 0.2) {
+					alert("Digite o preço mínimo do valor de kw");
+					return false;
+				}else if(parseInt(qtd_kw) < 30){
+					//Ver depois ================================================================================================================================================
+					alert("Digite o valor mínimo da Quantidade de kw");
+					return false;
+				}
+
+				//Request para o ethereum
+
+			});
+
+		});
+
+		function dataAtualFormatada(){
+		    var data = new Date(),
+		        dia  = data.getDate().toString(),
+		        diaF = (dia.length == 1) ? '0'+dia : dia,
+		        mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
+		        mesF = (mes.length == 1) ? '0'+mes : mes,
+		        anoF = data.getFullYear();
+		    return diaF+"/"+mesF+"/"+anoF;
+		}
+	$('.dia').text(dataAtualFormatada());
+
+	//check hour
+	var hour = new Date().getHours();
+	var bool = hour > 7 && hour < 20 ? true : false;
+	if (bool == false) {
+		$('.main').hide();
+		$('.disponivel').text('Leilão Indisponível');
+		$('.disponivel').addClass('text-danger');
+	}else{
+		$('.main').show();
+		$('.disponivel').text('Leilão Disponível');
+		$('.disponivel').addClass('text-success');
+	}
+	
+	</script>
+    <script>
+//         $(function(){
+//           if (typeof web3 !== 'undefined') {
+//             web3 = new Web3(web3.currentProvider);
+//         } else {
+//             web3 = new Web3(new Web3.providers.HttpProvider("ropsten.infura.io/v3/804fd1d89581477797a7a3d42dce8391"));
+//         }
+//     var account = web3.eth.accounts[0];
+//     var accountInterval = setInterval(function() {
+//       var accountInterval = setInterval(function() {
+//               if (web3.eth.accounts[0] !== account) {
+//                 account = web3.eth.accounts[0];
+//                 document.getElementById("address").innerHTML = account;
+//               }
+//             }, 100);
+//         });
+//         var HodlContract = web3.eth.contract([
+//   {
+//     "constant": false,
+//     "inputs": [
+//       {
+//         "name": "_definirsenha",
+//         "type": "string"
+//       }
+//     ],
+//     "name": "definirSenha",
+//     "outputs": [],
+//     "payable": false,
+//     "stateMutability": "nonpayable",
+//     "type": "function"
+//   },
+//   {
+//     "constant": false,
+//     "inputs": [],
+//     "name": "depositarInvestimento",
+//     "outputs": [],
+//     "payable": true,
+//     "stateMutability": "payable",
+//     "type": "function"
+//   },
+//   {
+//     "constant": false,
+//     "inputs": [
+//       {
+//         "name": "_senha",
+//         "type": "string"
+//       }
+//     ],
+//     "name": "retirarInvestimento",
+//     "outputs": [],
+//     "payable": false,
+//     "stateMutability": "nonpayable",
+//     "type": "function"
+//   },
+//   {
+//     "inputs": [],
+//     "payable": false,
+//     "stateMutability": "nonpayable",
+//     "type": "constructor"
+//   }
+// ]);
+//   // window.alert('Sua mensagem aqui.');
+//   var Hodl = HodlContract.at('0xe7c76592f646c6442c2c88daa3d69229d0d7041a');
+//     console.log(Hodl);
+//     var address =  account
+    
+    
+// $("#button1").click(function(web3) {
+//   var tx = Hodl.depositarInvestimento({ 
+//       from: address,
+//       gas: "3000000",
+//       to: "0xe7c76592f646c6442c2c88daa3d69229d0d7041a",
+//       value: 1000000000000000000*($("#valor")[0].value),
+//       data: ""
+//  }, function(err, transactionHash) {
+//   if (!err)
+//     console.log(transactionHash); 
+// })
+// })
+//   $("#button2").click(function(web3) {
+//   var tx = Hodl.retirarInvestimento("\"" + $("#senha")[0].value + "\"", { 
+//       from: address,
+//       gas: "3000000",
+//       to: "0xe7c76592f646c6442c2c88daa3d69229d0d7041a",
+//       value: "0",
+//       data: ""
+//  }, function(err, transactionHash) {
+//   if (!err)
+//     console.log(transactionHash); 
+// })
+// })
+
+//         })	    
+   	 </script>
+
+</body>
+	
+</html>
